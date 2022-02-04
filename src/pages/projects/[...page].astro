@@ -1,0 +1,29 @@
+---
+import Navbar from "../../components/Navbar.tsx";
+
+export async function getStaticPaths({paginate}) {
+    const allRepos = Astro.fetchContent('./*.md');
+    return paginate(allRepos, {repoSize: 100});
+}
+
+const {page} = Astro.props;
+
+
+---
+
+<html lang="en">
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <link rel="stylesheet" href="/global.css">
+    </head>
+    <body>
+        <main>
+            <Navbar/>
+            {page.data.map((post) => (
+                <h2><a href={post.url}>{post.title}</a></h2>
+                <p>{post.description}</p>
+            ))}
+        </main>
+    </body>
+</html>
