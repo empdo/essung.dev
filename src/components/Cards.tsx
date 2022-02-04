@@ -9,11 +9,12 @@ export default () => {
     
     const stuff = cards.map((content,layer) => {
         const realIndex = (layer + offset) % cards.length;
+        const margin = (cards.length - realIndex)*10;
 
         return (
-            <div onClick={() => setOffset(offset + 1)} key={content} className="card" style={{zIndex: realIndex, marginRight: realIndex*20, marginTop: realIndex*20, opacity: ((realIndex +1) / (cards.length) ) }} >
+            <div onClick={() => setOffset(offset + 1)} key={content} className="card" style={{zIndex: realIndex, marginLeft: margin, marginBottom: margin, opacity: ((realIndex +1) / (cards.length) ) }} >
                  <p>{content}</p>
-                {offset ===  0 ? <p id="click-alert">click me!</p> : <></>}
+                {offset ===  0 && layer === cards.length - 1 ? <p id="click-alert">click me!</p> : <></>}
             </div>
         )
     });
