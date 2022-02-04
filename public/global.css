@@ -1,13 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+@font-face {
+	font-family: "Hack-TTF";
+	font-size: 2rem;
+	src: url("assets/fonts/Hack-Regular.ttf");
+}
+
+:root {
+	font-family: "SauceCodePro Nerd Font";
+  font-weight: 500;
+	font-size: 18px;
+}
 
 * {
   box-sizing: border-box;
 }
 
-:root {
-  font-family: "Fira Code", monospace;
-  font-size: 18px;
-}
 
 html,
 body {
@@ -46,6 +52,10 @@ a {
 nav {
   display: flex;
   align-items: center;
+}
+
+h1 {
+  font-weight: 800;
 }
 
 nav h3 {
@@ -94,9 +104,30 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  user-select: none;
 }
 
 .card-holder {
   cursor: pointer;
 
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#click-alert {
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 0.25s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+
+  font-style: italic;
 }
