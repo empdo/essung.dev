@@ -5,7 +5,7 @@ export default () => {
     <nav>
         <h1><a href="/">Emil Essung</a></h1>
         <h3>
-          <a href="/projects">Projects</a>
+          <a href="/projects/">Projects</a>
         </h3>
         <h3>
             <a target="_blank" href="https://github.com/empdo">Github</a>
