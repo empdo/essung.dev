@@ -1,7 +1,7 @@
 ---
 setup: |
   import Layout from '../../layouts/ProjectLayout.astro';
-title: dotfiles 
+title: message app 
 description: Linux dotfiles
 url: https://github.com/empdo/message_app
 ---
