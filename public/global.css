@@ -1,18 +1,16 @@
 @font-face {
-  font-family: 'Sauce Code Pro';
+  font-family: "Sauce Code Pro";
   font-weight: 500;
-  src:url("/assets/fonts/Sauce-Code-Pro.ttf");
+  src: url("/assets/fonts/Sauce-Code-Pro.ttf");
 }
 
-
 :root {
-  font-family: 'Sauce Code Pro', monospace;
+  font-family: "Sauce Code Pro", monospace;
 }
 
 * {
   box-sizing: border-box;
 }
-
 
 html,
 body {
@@ -30,15 +28,12 @@ main {
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 30px;
-
 }
 
 @media screen and (min-width: 600px) {
-
   .card-holder {
     height: 100px;
   }
-
 }
 @media screen and (max-width: 600px) {
   .card {
@@ -48,9 +43,7 @@ main {
   .card-holder {
     height: 120px;
   }
-
 }
-
 
 a {
   color: white;
@@ -81,16 +74,16 @@ nav > a {
 }
 
 nav a:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 h1 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .card {
   position: absolute;
-  
+
   padding-left: 1.5rem;
 
   width: 500px;
@@ -101,7 +94,7 @@ h1 a {
   border-color: white;
 
   background-color: #111827;
-  transition: margin .5s;
+  transition: margin 0.5s;
 }
 
 .card-holder {
@@ -135,3 +128,8 @@ h1 a {
 
   font-style: italic;
 }
+
+img {
+  max-width: 100%;
+}
+
