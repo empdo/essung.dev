@@ -1,34 +1,9 @@
 ---
 import {Markdown} from "astro/components";
 import Cards from "../components/Cards.tsx";
+import Main from "../components/Main.tsx";
 ---
 
 <header>
-    <Cards client:load/>
-    <Markdown>
-
-        ## Skills <span class="small">(sorted in confidence)</span>
-        - JavaScript / TypeScript
-        - Python
-        - Dart
-
-        I also have experince making games with C# in unity and minecraft plugins with java.
-     
-        ## Technology
-        - React
-        - Flutter
-        - HTML + CSS/SCSS
-        - Linux
-        - Git
-        - SSH
-        - Vim
-
-        ## Contact
-
-        Email: emil.essung@live.se
-
-        LinkedIn: [Emil Essung](https://www.linkedin.com/in/emil-essung-1b4b21217/)
-
-    </Markdown>
-    
+    <Main client:load/>
 </header>
