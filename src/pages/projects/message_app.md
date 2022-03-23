@@ -10,6 +10,6 @@ A message app created in react.
 
 ![Screenshot](/screenshot.png)
 
-[Link to website](https://message.essung.dev)
+[Link to website](https://message.essung.dev){:target="_blank"}
 
 [Link to api](https://github.com/empdo/message_api)
