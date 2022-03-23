@@ -29,26 +29,33 @@ body {
 main {
   height: 80vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0 2rem;
 }
 
-media screen and (min-width: 600px) {
-  .card-holder {
-    height: 100px;
-  }
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
 }
+
+article > * {
+  padding-bottom: 1rem;
+}
+
 @media screen and (max-width: 600px) {
-  .card {
-    max-width: 80%;
-  }
-
-  .card-holder {
-    height: 120px;
+  #main {
+    flex-direction: column;
   }
 }
 
 a {
   color: white;
+}
+
+p {
+  margin: 0;
 }
 
 .small {
@@ -58,7 +65,7 @@ a {
 nav {
   display: flex;
   align-items: flex-end;
-  margin: 20px 0;
+  margin: 1.5rem 2rem;
 }
 
 h1 {
@@ -133,6 +140,7 @@ h1 a {
 
 img {
   max-width: 100%;
+  max-height: 31.4159265359rem;
 }
 
 #main {
@@ -146,10 +154,7 @@ h3 {
   font-weight: 400;
 }
 
-#main p {
-  margin: 0 3rem;
-}
-
-li::marker {
-  color: transparent;
+#code-block p,
+#code-block a {
+  margin-left: 3rem;
 }

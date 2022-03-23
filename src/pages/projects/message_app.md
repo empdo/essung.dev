@@ -1,11 +1,14 @@
 ---
 setup: |
   import Layout from '../../layouts/ProjectLayout.astro';
-title: message app 
+title: message app
 description: Message app
 url: https://github.com/empdo/message_app
 ---
+
 A message app created in react.
+
+![Screenshot](/message_app.png)
 
 [Link to website](https://message.essung.dev)
 
