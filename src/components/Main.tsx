@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 export default () => {
   const text =
-    "I am 18 years old from Gothenburg, Sweden. All my life i have been interested in different aspects of technology. I am know interested in both web development and programing. ";
+    "I am 18 years old from Gothenburg, Sweden. All my life i have been interested in different aspects of technology. I am now interested in both web development and programing. ";
   const text2 = "I know have ";
   const [horibleText, setHoribleText] = React.useState(" ");
   let i = 0;
